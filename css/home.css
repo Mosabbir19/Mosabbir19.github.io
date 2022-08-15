@@ -143,6 +143,13 @@ body {
   background: #fff;
 }
 
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  color: darkturquoise;
+  padding: 2rem 0;
+}
+
 /* home section starts*/
 .home {
   display: flex;
@@ -206,7 +213,7 @@ body {
 }
 
 .experience .box {
-  padding: 3rem 0 2rem 0;
+  padding-bottom: 2rem;
   /* border-left: #111 solid 0.1rem; */
 }
 
@@ -248,7 +255,6 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem 0;
 }
 
 .education .box-container .box {
@@ -309,7 +315,6 @@ body {
   justify-content: center;
   flex-flow: column;
   padding: 0 10rem;
-  font-size: 1.8rem;
 }
 
 .skill .box-container {
@@ -317,12 +322,13 @@ body {
   /* align-items: center; */
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .skill .box-container .container {
   width: 45%;
-  margin: 2rem 0rem;
+  /* margin: 2rem 0rem; */
+  margin-bottom: 4rem;
   padding: 3rem;
   border-left: .2rem solid #222;
   position: relative;
@@ -335,13 +341,14 @@ body {
   padding-bottom: 2rem;
 }
 
-.skill .box-container .container .info {
+/* .skill .box-container .container .info {
   font-size: 1.8rem;
-  /* text-align: justify; */
-}
+  text-align: justify;
+} */
 
 .skill .box-container .container li {
   line-height: 120%;
+  font-size: 1.8rem;
 }
 
 /* skill section ends here */
@@ -352,7 +359,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 5rem 10rem;
+  padding: 0rem 10rem;
 }
 
 .research .container {
@@ -389,9 +396,12 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 5rem 10rem;
-  font-size: 1.8rem;
+  padding: 0rem 10rem;
   text-align: justify;
+}
+
+.projects li {
+  font-size: 1.8rem;
 }
 
 .projects h4 {
@@ -405,30 +415,30 @@ body {
 /* projects ends here */
 
 /* Acheivements starts here */
-.acheivements {
+.achievements {
   display: flex;
   justify-content: center;
   flex-flow: column;
   padding: 0rem 10rem;
-  font-size: 1.8rem;
   text-align: justify;
 }
 
-.acheivements .accomplishments {
+.achievements .accomplishments {
   padding-bottom: 3rem;
+  font-size: 1.8rem;
 }
 
-.acheivements .accomplishments h1 {
+.achievements .accomplishments h1 {
   padding-bottom: 2rem;
 }
 
-.acheivements .accomplishments ul {
+.achievements .accomplishments ul {
   /* list-style: none; */
   padding-bottom: 2rem;
   padding-left: 4rem;
 }
 
-.acheivements .accomplishments ul .date {
+.achievements .accomplishments ul .date {
   font-size: 1.3rem;
   background: rgb(243, 243, 243);
   color: #333;
@@ -436,33 +446,37 @@ body {
   padding: .5rem 2rem;
 }
 
-.acheivements .accomplishments ul li span {
+.achievements .accomplishments ul li span {
   font-weight: bold;
 }
 
-.acheivements .accomplishments ul li {
+.achievements .accomplishments ul li {
   line-height: 150%;
   padding: 0.5rem 0 1rem 0;
 }
 
-.acheivements .accomplishments ul li a {
+.achievements .accomplishments ul li a {
   color: darkturquoise;
 }
 
-.acheivements .accomplishments ul li a:hover {
+.achievements .accomplishments ul li a:hover {
   text-decoration: underline;
 }
 
-.acheivements .awards h1 {
+.achievements .awards {
+  font-size: 1.8rem;
+}
+
+.achievements .awards h1 {
   padding-bottom: 2rem;
 }
 
-.acheivements .awards ul {
+.achievements .awards ul {
   line-height: 150%;
   padding-left: 4rem;
 }
 
-.acheivements .awards span {
+.achievements .awards span {
   font-weight: bold;
 }
 
@@ -474,12 +488,16 @@ body {
   justify-content: center;
   flex-flow: column;
   padding: 0rem 10rem;
-  font-size: 1.8rem;
 }
 
 .contact .info {
   padding-bottom: 4rem;
-  line-height: 200%;
+  /* line-height: 200%; */
+  font-size: 1.8rem;
+}
+
+.contact .info p {
+  padding-bottom: 1rem;
 }
 
 .contact .social .link {
@@ -588,9 +606,9 @@ body {
 
 @media (max-width:768px) {
 
-  html {
-    font-size: 50%;
-  }
+  /* html {
+    font-size: 60%;
+  } */
 
 
 
@@ -620,22 +638,5 @@ body {
   .heading {
     margin: 0 3rem;
   }
-
-
-  /* .about .row .counter .box {
-    width: 100%;
-  }
-
-  .education .box-container .box {
-    width: 100%;
-  }
-
-  .portfolio .box-container .box {
-    width: 100%;
-  }
-
-  .contact .row form {
-    margin: 3rem 0;
-  } */
 
 }
