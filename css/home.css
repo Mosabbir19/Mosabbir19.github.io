@@ -405,7 +405,11 @@ body {
 }
 
 .projects h4 {
-  padding-bottom: 1rem;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.projects li .tools span{
+  font-weight: bold;
 }
 
 .projects img {
