@@ -57,7 +57,8 @@ header {
   height: 100%;
   width: 35rem;
   /* background: rgb(39, 39, 39); */
-  background: rgb(250, 250, 250);
+  /* background: rgb(250, 250, 250); */
+  background:darkslategray;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -98,6 +99,7 @@ header .navbar ul li a {
   margin: 1.5rem 0;
   /* background: #333; */
   color: darkturquoise;
+  /* color:darkcyan; */
   font-size: 1.8rem;
   border-radius: 5rem;
   /* padding: 0.5rem 2rem; */
@@ -240,6 +242,16 @@ body {
   line-height: 120%;
 }
 
+.experience .box ul {
+  margin-left: 1.5rem;
+}
+
+.experience .box ul h4{
+  list-style: none;
+  font-weight: normal;
+  margin-left: 5rem;
+}
+
 /* experience section ends here */
 
 /* education starts here */
@@ -375,6 +387,14 @@ body {
   padding-bottom: 1rem;
 }
 
+.research .container h4 a{
+  color: #000;
+}
+
+.research .container h4 a:hover{
+  color: darkturquoise;
+}
+
 .research .container .description {
   line-height: 120%;
   padding-bottom: 1rem;
@@ -466,6 +486,103 @@ body {
 .achievements .accomplishments ul li a:hover {
   text-decoration: underline;
 }
+
+
+/* Slideshow container */
+.achievements .slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+.achievements .slideshow-container .fade {
+  text-align: center;
+}
+
+.achievements .slideshow-container img {
+  width: 80%;
+  align-items: center;
+}
+
+/* Next & previous buttons */
+.achievements .prev, .achievements .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  /* height: 5rem;
+  width: 5rem; */
+  /* padding: 16px; */
+  margin-top: -22px;
+  color: rgb(224, 224, 224);
+  font-weight: bold;
+  font-size: 3.8rem;
+  transition: 0.6s ease;
+  /* border-radius: 0 3px 3px 0; */
+  /* border-radius: 50%; */
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.achievements .next {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+  /* border-radius: 50px; */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.achievements .prev:hover, .achievements .next:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.achievements .text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(211, 52, 52, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Number text (1/3 etc) */
+.achievements .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.achievements .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.achievements .active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.achievements .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 
 .achievements .awards {
   font-size: 1.8rem;
